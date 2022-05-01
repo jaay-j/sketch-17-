@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eleventh Sketch</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.shape.js"></script>
+    <script src="lib/p5.particle.js"></script>
+
+
+</head>
+
+<body>
+
+    <script src="javascript/sketch-17.js"></script>
+
+    <h1>Sketch 17</h1>
+    <p> What I made with p5 -- Day 17! </p>
+    <br><br>
+    <img src="img/sketch-17.png">
+
+    <div id="container">
+
+    <h3>
+
+        var ftn; <br><br>
+
+        function setup() {<br>
+            createCanvas(1000, 1000);<br>
+            background(0);<br><br>
+        
+        var t = {<br>
+            name: "Test",<br>
+            colors: ["blue", "white", "pink"],<br>
+            lifetime: 200, // how many?<br>
+            angle: [10, 60],<br>
+            gravity: 0.05,<br>
+            x: 0.1, // 20% from left<br>
+            y: 0.1,<br>
+            }<br><br>
+        
+            ftn = new Fountain(null, t);<br><br>
+        
+        }<br><br>
+        
+        function draw() {<br><br>
+        
+        ftn.Draw();<br>
+        ftn.Create();<br>
+        ftn.Step(); // create movement for each frame<br><br>
+        
+        noFill();<br>
+        stroke(225);<br>
+        strokeWeight(6);<br>
+        beginShape();<br>
+        curveVertex(170, 230);<br>
+        curveVertex(170, 230);<br>
+        curveVertex(400, 170);<br>
+        curveVertex(700, 230);<br>
+        curveVertex(800, 800);<br>
+        curveVertex(800, 800);<br>
+        endShape();<br>
+        
+        }
+       <br>
+
+</h3>
+</div>
+
+
+<a href="https://jaay-j.github.io/sketch_main" style="font-size:30px; margin:40%; color: rgb(145, 35, 189);"> BACK TO MENU </a> 
+
+</body>
+</html>
